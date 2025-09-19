@@ -69,29 +69,25 @@ const Header = () => {
                                 <Search size={20} />
                             </button>
                             
-                            <button 
-                            onClick={toggleSearch}
+                            {/* <button 
                             className='p-2 rounded-md text-gray-600 hover:text-gray-900
                             hover:bg-gray-100 transition-colors'>
                                 <Search size={20} />
                             </button>
                             
-                            <button 
-                            onClick={toggleSearch}
+                            <button
                             className='p-2 rounded-md text-gray-600 hover:text-gray-900
                             hover:bg-gray-100 transition-colors'>
                                 <Search size={20} />
-                            </button>
+                            </button> */}
                             
-                            <button 
-                            onClick={toggleSearch}
+                            {/* <button 
                             className='p-2 rounded-md text-gray-600 hover:text-gray-900
                             hover:bg-gray-100 transition-colors'>
                                 <Search size={20} />
-                            </button>
+                            </button> */}
                             
                             <button 
-                            onClick={toggleSearch}
                             className='p-2 rounded-md text-gray-600 hover:text-gray-900
                             hover:bg-gray-100 transition-colors relative'>
                                 <ShoppingBag size={20} />
@@ -111,7 +107,7 @@ const Header = () => {
                             <input
                             type='text'
                             placeholder=' Search for products...'
-                            className='x-full px-4 py-2 pl-10 pr-4 border border-gray-300 rounded-lg
+                            className='w-full px-4 py-2 pl-10 pr-4 border border-gray-300 rounded-lg
                             focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent'
                             />
                             <search className='absolute left-3 top-2.5 text-gray-400 size={18}'/>
@@ -122,32 +118,34 @@ const Header = () => {
 
                 {/* mobile nav */}
                 {isMenuOpen &&(
-                      <nav className='hidden ms:flex space-x-8'>
-                        <a href='#' className='text-gray-900 hover:text-gray-600 transition-colors
-                        font-medium'>
-                        New Arrivals
-                        </a>
-                        
-                        <a href='#' className='text-gray-900 hover:text-gray-600 transition-colors
-                        font-medium'>
-                        Womans
-                        </a>
-                        
-                        <a href='#' className='text-gray-900 hover:text-gray-600 transition-colors
-                        font-medium'>
-                        Men
-                        </a>
-                        
-                        <a href='#' className='text-gray-900 hover:text-gray-600 transition-colors
-                        font-medium'>
-                        Accessaries
-                        </a>
-                        
-                        <a href='#' className='text-gray-900 hover:text-gray-600 transition-colors
-                        font-medium'>
-                        Sale
-                        </a>
+                    <div className='md:hidden py-4 border-t border-gray-0200'>
+                        <nav className='hidden ms:flex space-x-8'>
+                            <a href='#' className='text-gray-900 hover:text-gray-600 transition-colors
+                            font-medium'>
+                                New Arrivals
+                            </a>
+                            
+                            <a href='#' className='text-gray-900 hover:text-gray-600 transition-colors
+                            font-medium'>
+                                Womans
+                            </a>
+                            
+                            <a href='#' className='text-gray-900 hover:text-gray-600 transition-colors
+                            font-medium'>
+                                Men
+                            </a>
+                            
+                            <a href='#' className='text-gray-900 hover:text-gray-600 transition-colors
+                            font-medium'>
+                                Accessaries
+                            </a>
+                            
+                            <a href='#' className='text-gray-900 hover:text-gray-600 transition-colors
+                            font-medium'>
+                                Sale
+                            </a>
                         </nav>
+                    </div>
                 )}
             </div>
 
