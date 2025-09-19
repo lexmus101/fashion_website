@@ -214,6 +214,11 @@ layer(base);
    --foreground: #171717;
 }
 
+.dark {
+   --background: #0a0a0a;
+   --foreground: #171717;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--background);
@@ -225,6 +230,7 @@ body {
   background: var(--background);
   color:var(--foreground);
   font-family: 'inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Robot, sans-serif;
+  transition:background-color 0.3s ease, color 0.3s ease;
 }
 
 /* custom utils */
@@ -256,4 +262,29 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* Animation utils */
+.animation-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animation-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+.animation-slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animation-scale-in {
+  animation: scaleIn 0.2s ease-out;
 }
